@@ -17,7 +17,7 @@ const LogIn = () => {
     await new Promise((e) => setTimeout(e,5000));
     reset();
     console.log('Submitted',data);
-    localStorage.setItem('userdata',JSON.stringify(data));
+    localStorage.setItem('userdata-Login',JSON.stringify(data));
     toast.success('Submitted Successfully!', {
       position: "top-right",
       autoClose: 5000,
@@ -30,7 +30,7 @@ const LogIn = () => {
       });
   }
   return (
-    <div className='w-screen bg-white flex md:flex-row flex-col'>
+    <div className='h-screen w-screen bg-white flex md:flex-row flex-col'>
         <Left/>
     <div className="right h-full w-full md:w-2/4 md:flex items-center justify-center md:p-4 flex-col">
           <form onSubmit={handleSubmit(onSubmit)} className='p-4 flex flex-col gap-3 w-full'>
@@ -74,8 +74,10 @@ const LogIn = () => {
                 }
               )} className='w-full p-2 rounded-md border border-blue-950' type="password"/>
               {errors.password && <p className='text-red-600 font-semibold text-base'>{errors.password.message}</p>}
+              <p className='text-center text-sm'>Password must be uppercase, lowecase, digits, special-Character! </p>
             </div>
             <input disabled={isSubmitting} value={isSubmitting ? 'Submitting' : 'Submit'} className='text-white bg-blue-600 font-semibold text-xl rounded-md p-3' type="submit"/>
+            {/* //SignUp */}
             <p className='text-center'>Don't have an account yet? <NavLink to='signup' className='text-blue-600'>Signup</NavLink></p>
            
             <ToastContainer/>
