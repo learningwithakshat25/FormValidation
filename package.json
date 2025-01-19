@@ -1,6 +1,6 @@
 {
   "name": "formhandling",
-  "homepage": "https://learningwithakshat.gethub/io/FormHandling",
+  "homepage": "https://learningwithakshat25.gethub/io/FormHandling",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.54.2",
