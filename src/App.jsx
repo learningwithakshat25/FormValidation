@@ -1,5 +1,5 @@
 import React from 'react'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 import AppLayout from './Components/AppLayout/AppLayout'
 import ContactForm from './Pages/ContactForm'
 import Hero from './Pages/Hero'
@@ -8,7 +8,7 @@ import LogIn from './Pages/LogIn'
 
 
 const App = () => {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: '/',
       element: <AppLayout/>,
