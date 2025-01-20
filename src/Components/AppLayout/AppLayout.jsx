@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom'
 
 const AppLayout = () => {
   return (
-    <div>
+    <div className='h-screen w-screen container mx-auto'>
         <Header/>
         <Outlet/>
         <Footer/>

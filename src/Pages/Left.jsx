@@ -3,9 +3,9 @@ import Img from '../../src/assets/SE.png'
 
 const Left = () => {
   return (
-    <div className="left hidden p-10 md:h-full w-full md:w-2/4 md:flex items-center justify-center">
+    <div className="left hidden p-10 md:h-full w-full md:w-2/4 md:flex items-center justify-center container mx-auto">
     {/* <h1 className='text-3xl md:text-6xl font-bold font-Poppins text-center'>Welcome to <p className='font-Dancing text-2xl md:text-5xl mt-2'>The Community</p></h1> */}
-    <img className='h-full' src={Img} alt="" />
+    <img className='h-96 w-96' src={Img} alt="" />
     </div>
   )
 }

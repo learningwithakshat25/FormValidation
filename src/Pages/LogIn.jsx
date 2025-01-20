@@ -30,7 +30,7 @@ const LogIn = () => {
       });
   }
   return (
-    <div className='h-screen w-screen bg-white flex md:flex-row flex-col'>
+    <div className='w-screen bg-white flex md:flex-row flex-col container mx-auto'>
         <Left/>
     <div className="right h-full w-full md:w-2/4 md:flex items-center justify-center md:p-4 flex-col">
           <form onSubmit={handleSubmit(onSubmit)} className='p-4 flex flex-col gap-3 w-full'>

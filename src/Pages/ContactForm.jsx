@@ -6,7 +6,7 @@ const Form = () => {
   const [toggle, settoggle] = useState(false);
 
   return (
-    <div className='h-screen w-screen bg-white flex md:flex-row flex-col'>
+    <div className='w-screen bg-white flex md:flex-row flex-col container mx-auto'>
       <LogIn />
     </div>
   )
