@@ -6,7 +6,6 @@ import Hero from './Pages/Hero'
 import SignUp from './Pages/SignUp'
 import LogIn from './Pages/LogIn'
 
-
 const App = () => {
   const router = createHashRouter([
     {
